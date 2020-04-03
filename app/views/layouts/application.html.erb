@@ -1,51 +1,59 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
 
-<script async=""
-src="https://www.googletagmanager.com/gtag/js?id=UA-66281730-5"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', '<%= ENV['GA_PROPERTY_ID'] %>');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152782082-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '<%= ENV['GA_PROPERTY_ID'] %>');
+    </script>
 
-<title>Get help if you're staying at home due to coronavirus | Camden
-Council</title>
-<link
-href="https://www.camden.gov.uk/o/camden-theme/images/favicon.ico"
-rel="icon">
-<meta name="viewport" content="width=device-width">
-</head>
-<body>
-&lt;%= csrf_meta_tags %&gt; &lt;%= csp_meta_tag %&gt; &lt;%=
-stylesheet_link_tag 'application', media: 'all',
-'data-turbolinks-track': 'reload' %&gt; &lt;%= javascript_include_tag
-'application', 'data-turbolinks-track': 'reload' %&gt; <header
-class="site-header"> </header>
-<div class="container"> <a href="https://www.midsussex.gov.uk"
-class="site-header__masthead"> &lt;%= image_tag "logo.svg", alt: "MID
-Sussex District Counci Council" %&gt; </a> </div>
-<section class="beta-banner"> </section>
-<div class="beta-banner__inner container"> <strong
-class="beta-banner__tag">Beta</strong>
-<p class="beta-banner__message">We're updating this website every day
-â€” <a href="https://forms.gle/KccDGFHTpbcGLGob7">your feedback</a>
-helps us improve it.</p>
-</div>
-<div class="main-content-area">
-<div class="container"> &lt;%= yield %&gt; </div>
-</div>
-<footer class="site-footer"> </footer>
-<div class="container">
-<p class="site-footer__notice">Â© 20201 Mid Sussex District Council</p>
-<nav class="site-footer__menu"> <a class="site-footer__link"
-href="https://www.midsussex.gov.uk/about-us/privacy-notice/"
-target="_blank">Privacy &amp; cookies</a> <a class="site-footer__link"
-href="https://www.midsussex.gov.uk/about-us/contact-us/"
-target="_blank">Contact us</a> <a class="site-footer__link"
-href="https://forms.gle/KccDGFHTpbcGLGob7">Give feedback on this
-service</a> </nav> </div>
-<script type="text/javascript">(function(){var sz=document.createElement("script");sz.type="text/javascript";sz.async=true;sz.src="//siteimproveanalytics.com/js/siteanalyze_310205.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(sz,s)})();</script>
-</body>
+    <title>Get help if you're staying at home due to coronavirus | Camden Council</title>
+    <link href="https://www.camden.gov.uk/o/camden-theme/images/favicon.ico" rel="icon" />
+    <meta name="viewport" content="width=device-width">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+
+    <header class="site-header">
+      <div class="container">
+        <a href="https://www.midsussex.gov.uk" class="site-header__masthead">
+          <%= image_tag "logo.svg", alt: "MID Sussex District Counci Council" %>
+        </a>
+      </div>
+    </header>
+
+    <section class="beta-banner">
+      <div class="beta-banner__inner container">
+        <strong class="beta-banner__tag">Beta</strong>
+        <p class="beta-banner__message">We're updating this website every day — <a href="https://forms.gle/KccDGFHTpbcGLGob7">your feedback</a> helps us improve it.</p>
+      </div>
+    </section>
+
+    <div class="main-content-area">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="site-footer__notice">© 2020 Mid Sussex District Council</p>
+        <nav class="site-footer__menu">
+          <a class="site-footer__link" href="https://www.midsussex.gov.uk/about-us/privacy-notice/" target="_blank">Privacy & cookies</a>
+          <a class="site-footer__link" href="https://www.midsussex.gov.uk/about-us/contact-us/" target="_blank">Contact us</a>
+          <a class="site-footer__link" href="https://forms.gle/KccDGFHTpbcGLGob7">Give feedback on this service</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="text/javascript">(function(){var sz=document.createElement("script");sz.type="text/javascript";sz.async=true;sz.src="//siteimproveanalytics.com/js/siteanalyze_310205.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(sz,s)})();</script>
+
+  </body>
 </html>
