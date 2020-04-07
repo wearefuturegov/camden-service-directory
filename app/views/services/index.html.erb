@@ -11,8 +11,7 @@
         <p>If your income has stopped or dropped as a result of coronavirus, you might be able to get financial support.</p>
         <a class="important__link" href="https://www.midsussex.gov.uk/coronavirus-community-support/">Details and how to apply</a>
     </section>
-<% end %>
-
+<% end %>    
 <ol class="service-results">
     <% @top_result.each do |s| %>
         <%= render partial: "shared/service_card", locals: {s: s, recommended: true} %>
