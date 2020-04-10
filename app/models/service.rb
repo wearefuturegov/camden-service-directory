@@ -3,6 +3,9 @@ class Service < ApplicationRecord
   after_validation :geocode
 
   def rough_distance
+      
+      "About 100 miles away"  
+    
       if distance < 1
         "Less than a mile away"
       elsif (1 < distance) && (distance < 2)
