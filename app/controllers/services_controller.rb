@@ -36,7 +36,7 @@ class ServicesController < ApplicationController
                 end
             end
         else
-            redirect_to search_services_path, :notice => "Couldn't find any services near that location. Please make sure your location is a valid Camden area."
+            redirect_to search_services_path, :notice => "Couldn't find any services near that location. Please make sure your location is a valid Mid Sussex area."
         end
     end 
 
