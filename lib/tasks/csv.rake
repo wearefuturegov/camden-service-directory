@@ -38,7 +38,7 @@ task :csv => :environment do
         end
         service.category = categories
 
-        service.url = row[9]
+        
         service.phone = row[10]
         service.email = row[11]
         service.postcode = row[12]
