@@ -38,10 +38,10 @@ task :csv => :environment do
         end
         service.category = categories
 
-        service.url = row[8]
-        service.phone = row[9]
-        service.email = row[10]
-        service.postcode = row[11]
+        service.url = row[9]
+        service.phone = row[10]
+        service.email = row[11]
+        service.postcode = row[12]
         service.recommended = row[15]
         service.key_point_1 = row[16]
         service.key_point_2 = row[17]
